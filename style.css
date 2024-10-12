@@ -1,9 +1,10 @@
 #txt2img_container_aspect_ratio,
 #img2img_container_aspect_ratio {
 	gap: 10px !important;
-	margin: 0px;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 0px;  
 }
 
