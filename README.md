@@ -86,6 +86,10 @@ After writing my first Extension the realisation of the Extension was a little b
 * 69:25
 * 256:135
 
+# Side Note
+
+If there are aspect ratios in the extension that I do not yet know, but which were or are common, please let me know so that I can take them into account.
+
 # References
 
 [1] https://github.com/AUTOMATIC1111/stable-diffusion-webui
