@@ -8,6 +8,16 @@
 	padding: 0px;  
 }
 
+#txt2img_accordion_aspect_ratio,
+#img2img_accordion_aspect_ratio {
+	gap: 10px !important;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding: 6px;  
+}
+
 #txt2img_row_aspect_ratio,
 #img2img_row_aspect_ratio {
 	margin-right: 6px;
