@@ -90,6 +90,10 @@ After writing my first Extension the realisation of the Extension was a little b
 
 If there are aspect ratios in the extension that I do not yet know, but which were or are common, please let me know so that I can take them into account.
 
+# To-Do
+
+Improvement of this documentation.
+
 # References
 
 [1] https://github.com/AUTOMATIC1111/stable-diffusion-webui
