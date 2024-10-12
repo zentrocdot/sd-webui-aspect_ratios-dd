@@ -46,7 +46,7 @@ arlist = ["1:1", "1.5:1", "2:1", "2.4:1", "3:1", "3:2", "3.2:1", "3.6:1", "4:1",
 
 # Create an dictionary.
 ardict = dict()
-for ele in arraw:
+for ele in arlist:
     templist = ele.split(":")
     fval = float(templist[0]) / float(templist[1])       
     ardict[str(ele)] = fval 
