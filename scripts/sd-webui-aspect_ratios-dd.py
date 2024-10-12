@@ -111,7 +111,7 @@ class AspectRatioScript(scripts.Script):
         # Loop over the columns.
         with gr.Column(elem_id=css_col):
             with InputAccordion(value=False,
-                label="Utilised Aspect Ratios (Landscape Orientation)", 
+                label="Common Landscape Aspect Ratios", 
                 elem_id=css_acc
             ) as enabled:
                 arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
