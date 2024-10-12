@@ -129,6 +129,7 @@ class AspectRatioScript(scripts.Script):
                             rst.ar = 1.0
                             return rst.apply(_width, _height)
                         rst.click(update_rst, inputs=[arval], outputs=imgres)
+                        rst.click(update_rst, inputs=[arval], outputs=[arval])
                         def update_chg(arstr):
                             chg.ar = 1/ardict[arstr]
                             return chg.apply(_width, _height)
