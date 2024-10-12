@@ -97,12 +97,13 @@ class AspectRatioScript(scripts.Script):
         '''Class method ui.'''
         # Set the css format strings.
         css_col = f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
-        css_row = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'      
+        css_row = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
+        css_acc = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio'       
         # Loop over the columns.
         with gr.Column(elem_id=css_col):
-            with InputAccordion(
-                False, label="Utilised Aspect Ratios (Landscape Orientation)", 
-                elem_id=f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
+            with InputAccordion(value=False,
+                label="Utilised Aspect Ratios (Landscape Orientation)", 
+                elem_id=css_acc
             ) as enabled:
                 arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
                 with gr.Row(elem_id=css_row):
