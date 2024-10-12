@@ -114,7 +114,9 @@
    Width = Height * Aspect Ratio
 </pre>
 
-  
+<p align="justify">The second and calculated value is an integer or an floating point number.</p>
+
+<p align="justify">Both values are printed into the terminal window and can be checked there.</p>
 
 # Support Request 
 
