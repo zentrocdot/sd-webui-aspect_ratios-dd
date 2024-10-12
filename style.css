@@ -30,7 +30,6 @@
 
 #txt2img_row_aspect_ratio button,
 #img2img_row_aspect_ratio button {
-	vertical-align: bottom;
 	margin: 0px;
 	gap: 20px !important;
 	max-width: unset !important;
