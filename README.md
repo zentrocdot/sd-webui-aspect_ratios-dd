@@ -111,4 +111,5 @@
 # References
 
 [1] https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
 [2] https://github.com/AUTOMATIC1111/stable-diffusion-webui-extensions
