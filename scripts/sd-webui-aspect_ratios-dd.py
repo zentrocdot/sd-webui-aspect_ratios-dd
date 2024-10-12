@@ -39,13 +39,13 @@ ardict = {"1:1    ": 1.0,     "1.5:1  ": 1.5,     "2:1   ": 2.0,     "2.4:1": 2.
           "45:35  ": 45/35,   "55:23  ": 55/23,   "64:27": 64/27,    "69:25 ": 69/25,
           "239:100": 239/100, "256:135": 256/135, "1.19:1 ": 1.19,   "1.25:1": 1.25,
           "1.3:1 ": 1.3,      "1.33:1 ": 1.33,    "1.37:1 ": 1.37,   "1.375:1": 1.375,
-          "1.40:1": 1.40,     "1.41:1 ": 1.41,     "1.43:1 ": 1.43,  "1.54:1 ": 1.54,
-          "1.59:1": 1.59,     "1.6:1  ": 1.6,      "1.618:1": 1.618, "1.66:1 ": 1.66,
-          "1.75:1 ": 1.75,    "1.77:1 ": 1.77,     "1.78:1": 1.78,   "1.85:1 ": 1.85,
-          "1.875:1": 1.875,   "2.125 ": 2.125,     "2.16:1": 2.16,   "2.20:1 ": 2.20,
-          "2.21:1 ": 2.21,    "2.35:1": 2.35,      "2.37:1": 2.37,   "2.38:1 ": 2.38,
-          "2.39:1 ": 2.39,    "2.40:1": 2.40,      "2.66:1": 2.66,   "2.75:1 ": 2.75, 
-          "2.76:1 ": 2.76,    "3.55:1": 3.55,      "3.58:1": 3.58}
+          "1.40:1": 1.40,     "1.41:1 ": 1.41,    "1.43:1 ": 1.43,   "1.54:1 ": 1.54,
+          "1.59:1": 1.59,     "1.6:1  ": 1.6,     "1.618:1": 1.618,  "1.66:1 ": 1.66,
+          "1.75:1 ": 1.75,    "1.77:1 ": 1.77,    "1.78:1": 1.78,    "1.85:1 ": 1.85,
+          "1.875:1": 1.875,   "2.125 ": 2.125,    "2.16:1": 2.16,    "2.20:1 ": 2.20,
+          "2.21:1 ": 2.21,    "2.35:1": 2.35,     "2.37:1": 2.37,    "2.38:1 ": 2.38,
+          "2.39:1 ": 2.39,    "2.40:1": 2.40,     "2.66:1": 2.66,    "2.75:1 ": 2.75, 
+          "2.76:1 ": 2.76,    "3.55:1": 3.55,     "3.58:1": 3.58}
 
 # Declare the aspect ratio list.
 arlist = []
@@ -94,12 +94,20 @@ class AspectRatioScript(scripts.Script):
         '''Class method show.'''
         return scripts.AlwaysVisible  # hide this script in the Scripts dropdown
 
+    def image_resolution(self, is_img2img):
+        '''Get the image resolution from container and return the values.'''
+        if is_img2img:
+            imgres = [self.i2i_w, self.i2i_h]
+        else:
+            imgres = [self.t2i_w, self.t2i_h]
+        return imgres    
+
     def ui(self, is_img2img):
         '''Class method ui.'''
         # Set the css format strings.
+        css_acc = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio' 
         css_col = f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
         css_row = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
-        css_acc = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio'       
         # Loop over the columns.
         with gr.Column(elem_id=css_col):
             with InputAccordion(value=False,
@@ -108,37 +116,23 @@ class AspectRatioScript(scripts.Script):
             ) as enabled:
                 arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
                 with gr.Row(elem_id=css_row):
-                  rst = AspectRatioButton(ar=1.0, value="Reset")
-                  btn = AspectRatioButton(ar=1.0, value="Apply")
-                  chg = AspectRatioButton(ar=1.0, value="Change Orientation")
-                  with contextlib.suppress(AttributeError):
-                    if is_img2img:
-                        imgres = [self.i2i_w, self.i2i_h]
-                    else:
-                        imgres = [self.t2i_w, self.t2i_h]
-                    def update_button(arstr):
-                        btn.ar = ardict[arstr]
-                        return btn.apply(_width, _height)
-                    btn.click(
-                        update_button,
-                        inputs=[arval],
-                        outputs=imgres
-                    )
-                    def update_rst(arstr): 
-                        rst.ar = 1.0
-                        return rst.apply(_width, _height)
-                    rst.click(
-                        update_rst,
-                        inputs=[arval],
-                        outputs=imgres
-                    )
-                    def update_chg(arstr):
-                        chg.ar = 1/ardict[arstr]
-                        return chg.apply(_width, _height)
-                    chg.click(
-                        update_chg,
-                        inputs=[arval],
-                        outputs=imgres
+                    rst = AspectRatioButton(ar=1.0, value="Reset")
+                    btn = AspectRatioButton(ar=1.0, value="Apply")
+                    chg = AspectRatioButton(ar=1.0, value="Change Orientation")
+                    with contextlib.suppress(AttributeError):
+                        imgres = self.image_resolution(is_img2img)
+                        def update_button(arstr):
+                            btn.ar = ardict[arstr]
+                            return btn.apply(_width, _height)
+                        btn.click(update_button, inputs=[arval], outputs=imgres)
+                        def update_rst(arstr): 
+                            rst.ar = 1.0
+                            return rst.apply(_width, _height)
+                        rst.click(update_rst, inputs=[arval], outputs=imgres)
+                        def update_chg(arstr):
+                            chg.ar = 1/ardict[arstr]
+                            return chg.apply(_width, _height)
+                        chg.click(update_chg, inputs=[arval], outputs=imgres
                     )
     # Class method after_component.
     def after_component(self, component, **kwargs):
