@@ -8,7 +8,13 @@
 
 ## Preface
 
-After writing my first Extension the realisation of the Extension was a little bit mor complcated. But it works as expected at the end of the day.
+<p align="justify">After writing my first Extension the realisation of this Extension was a little bit more complicated. But it works as expected at the end of the day.</p>
+
+## Motivation
+
+<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
+
+<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well. The extensions I found did not fulfil their purpose. So this is an attempt to provide quick access to suitable Aspect ratios.</p>
 
 ## Implemented Aspect Ratios
 
