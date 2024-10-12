@@ -1,7 +1,14 @@
+#!/usr/bin/python3
 '''sd-webui-aspect_ratios-dd
 Extension for AUTOMATIC1111.
 
 Version 0.0.0.2
+
+Description
+The aspect ratios are given in a list. From this list a dictionary 
+is created, in which e.g. the key is "1:1" and the value is 1.0. This
+dictionary is required in my approach to get the value on base of the 
+key.
 '''
 # pylint: disable=invalid-name
 # pylint: disable=too-few-public-methods
