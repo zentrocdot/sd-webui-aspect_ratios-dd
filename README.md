@@ -108,6 +108,8 @@
 
 <p align="justify">Improvement of this documentation. Aspect ratios of interest from a text file should be used for the dropdown menu. Maintenance of the aspect ratios of interest is then easier for me. And the user can customise the file to suit their own needs.</p>   
 
+<p align="justify">Write a tool that takes into account the fact that the calculation of <code>Width</code> or <code>Height</code> can be a floating point number.</p>   
+
 # References
 
 [1] https://github.com/AUTOMATIC1111/stable-diffusion-webui
