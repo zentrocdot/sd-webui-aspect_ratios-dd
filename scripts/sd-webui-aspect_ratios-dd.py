@@ -1,7 +1,7 @@
 '''sd-webui-uncommon_aspect_ratios
 Extension for AUTOMATIC1111.
 
-Version 0.0.0.1
+Version 0.0.0.2
 '''
 # pylint: disable=invalid-name
 # pylint: disable=too-few-public-methods
