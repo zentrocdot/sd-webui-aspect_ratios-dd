@@ -8,17 +8,22 @@
 
 ## Preface
 
-<p align="justify">After writing my first Extension the realisation of this Extension was a little bit more complicated. But it works as expected at the end of the day.</p>
+<p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. 
+But I had a steep learning curve in <i>gradio</i> programming. But it works as expected at the end of the day.</p>
 
 ## Motivation
 
 <p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
 
-<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well. The extensions I found did not fulfil their purpose. So this is an attempt to provide quick access to suitable Aspect ratios.</p>
+<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well. The <i>Extensions</i> I found did not fulfil their purpose. So this is an attempt to provide quick access to suitable <i>Aspect Ratios</i>.</p>
+
+## Explanation
+
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. Via a dropdown menu one can select a predefined <i>Aspect Ratio</i>. Using the button Apply, The Width and Height are calculated and taken over in the main UI. A Reset button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
 
 ## Implemented Aspect Ratios
 
-<p align="justify">The aspect ratios are basically sorted into two blocks. First come the aspect ratios with integer numbers and then the apset ratio with floating point numbers.</p>
+<p align="justify">The given <i>Aspect Ratios</i> are basically sorted into two blocks. First come the <i>Aspect Ratios</i> with integer numbers and then the <i>Aspect Ratios</i> with floating point numbers.</p>
 
 * 1:1
 * 1.5:1
