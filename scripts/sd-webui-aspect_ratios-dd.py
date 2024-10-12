@@ -1,4 +1,4 @@
-'''sd-webui-uncommon_aspect_ratios
+'''sd-webui-aspect_ratios-dd
 Extension for AUTOMATIC1111.
 
 Version 0.0.0.2
@@ -25,27 +25,24 @@ from modules.ui_components import ToolButton, InputAccordion
 _width = 512
 _height = 512
 
-# Define the module aspect ratio dictionary.
-ardict = {"1:1    ": 1.0,     "1.5:1  ": 1.5,     "2:1   ": 2.0,     "2.4:1": 2.4, 
-          "3:1    ": 3.0,     "3:2    ": 3/2,     "3.2:1 ": 3.2,     "3.6:1 ": 3.6,
-          "4:1    ": 4.0,     "4:3    ": 4/3,     "5:1   ": 5.0,     "5:3   ": 5/3,
-          "5:4    ": 5/4,     "6:1    ": 6.0,     "6:5   ": 6/5,     "7:1   ": 7.0, 
-          "7:4    ": 7/4,     "7:5    ": 7/5,     "7:5.5 ": 7/5.5,   "8:5   ": 8/5,   
-          "9:16   ": 9/16,    "10:12  ": 10/12,   "11:5  ": 11/5,    "12:5  ": 12/5,
-          "13:18  ": 13/18,   "13:19  ": 13/19,   "14:9  ": 14/9,    "15:9  ": 15/9,  
-          "16:9   ": 16/9,    "16:10  ": 16/10,   "17:22 ": 17/22,   "18:5  ": 18/5,  
-          "18:9   ": 18/9,    "18.5:9 ": 18.5/9,  "19.5:9": 19.5/9,  "20:9  ": 20/9, 
-          "21:9   ": 21/9,    "22:9   ": 22/9,    "32:9  ": 32/9,    "36:10 ": 3.6,
-          "45:35  ": 45/35,   "55:23  ": 55/23,   "64:27": 64/27,    "69:25 ": 69/25,
-          "239:100": 239/100, "256:135": 256/135, "1.19:1 ": 1.19,   "1.25:1": 1.25,
-          "1.3:1 ": 1.3,      "1.33:1 ": 1.33,    "1.37:1 ": 1.37,   "1.375:1": 1.375,
-          "1.40:1": 1.40,     "1.41:1 ": 1.41,    "1.43:1 ": 1.43,   "1.54:1 ": 1.54,
-          "1.59:1": 1.59,     "1.6:1  ": 1.6,     "1.618:1": 1.618,  "1.66:1 ": 1.66,
-          "1.75:1 ": 1.75,    "1.77:1 ": 1.77,    "1.78:1": 1.78,    "1.85:1 ": 1.85,
-          "1.875:1": 1.875,   "2.125 ": 2.125,    "2.16:1": 2.16,    "2.20:1 ": 2.20,
-          "2.21:1 ": 2.21,    "2.35:1": 2.35,     "2.37:1": 2.37,    "2.38:1 ": 2.38,
-          "2.39:1 ": 2.39,    "2.40:1": 2.40,     "2.66:1": 2.66,    "2.75:1 ": 2.75, 
-          "2.76:1 ": 2.76,    "3.55:1": 3.55,     "3.58:1": 3.58}
+# Define the list with the aspect ratios.
+arraw = ["1:1", "1.5:1", "2:1", "2.4:1", "3:1", "3:2", "3.2:1", "3.6:1", "4:1",
+         "4:3", "5:1", "5:3", "5:4", "6:1", "6:5", "7:1", "7:4", "7:5", "7:5.5",
+         "8:5", "9:16", "10:12", "11:5", "12:5", "13:18", "13:19", "14:9", "15:9",
+         "16:9", "16:10", "17:22", "18:5", "18:9", "18.5:9", "19.5:9", "20:9",
+         "21:9", "22:9", "32:9", "36:10", "45:35", "55:23", "64:27", "69:25",
+         "239:100", "256:135", "1.19:1", "1.25:1", "1.3:1", "1.33:1", "1.37:1",
+         "1.375:1", "1.40:1", "1.41:1", "1.43:1", "1.54:1", "1.59:1", "1.6:1",
+         "1.618:1", "1.66:1", "1.75:1", "1.77:1", "1.78:1", "1.85:1", "1.875:1",
+         "2.125:1", "2.16:1", "2.20:1", "2.21:1", "2.35:1", "2.37:1", "2.38:1",
+         "2.39:1", "2.40:1", "2.66:1", "2.75:1", "2.76:1", "3.55:1", "3.58:1"]
+
+# Create an dictionary.
+ardict = dict()
+for ele in arraw:
+    templist = ele.split(":")
+    fval = float(templist[0]) / float(templist[1])       
+    ardict[str(ele)] = fval 
 
 # Declare the aspect ratio list.
 arlist = []
@@ -114,7 +111,10 @@ class AspectRatioScript(scripts.Script):
                 label="Common Landscape Aspect Ratios", 
                 elem_id=css_acc
             ) as enabled:
-                arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
+                with gr.Row(elem_id=css_row):      
+                    arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
+                    exact = gr.Textbox(value="EXACT", lines=1, render=True,
+                            interactive=True, label="Calculation of Width/Height")
                 with gr.Row(elem_id=css_row):
                     rst = AspectRatioButton(ar=1.0, value="Reset")
                     btn = AspectRatioButton(ar=1.0, value="Apply")
@@ -124,7 +124,18 @@ class AspectRatioScript(scripts.Script):
                         def update_button(arstr):
                             btn.ar = ardict[arstr]
                             return btn.apply(_width, _height)
+                        def check_calc(arstr):    
+                            retval = "ROUNDED"      
+                            ar = ardict[arstr]
+                            x = 512
+                            y = x * ar
+                            print(x, y)      
+                            if float(y).is_integer():
+                                retval = "EXACT"   
+                                #_exact = "EXACT"      
+                            return retval          
                         btn.click(update_button, inputs=[arval], outputs=imgres)
+                        btn.click(check_calc, inputs=[arval], outputs=exact)      
                         def update_rst0(arstr): 
                             rst.ar = 1.0
                             return rst.apply(_width, _height)
