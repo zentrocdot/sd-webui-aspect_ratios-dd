@@ -100,7 +100,23 @@
 * 3.55:1
 * 3.58:1
 
-# Side Note
+# Calculation of Width and Height
+
+<p align="justify">Depending on the orientation is Width or Height set to 512 pixel.</p>
+
+<pre>
+   Width = 512 pixel
+   Height = Width * Aspect Ratio
+</pre>
+
+<pre>
+   Height = 512 pixel
+   Width = Height * Aspect Ratio
+</pre>
+
+  
+
+# Support Request 
 
 <p align="justify">If there are aspect ratios in the extension that I do not yet know, but which were or are common, please let me know so that I can take them into account.</p>  
 
