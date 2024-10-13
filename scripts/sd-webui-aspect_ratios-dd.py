@@ -142,7 +142,7 @@ class ARDDScript(scripts.Script):
                         btn.click(update_button, inputs=[arval], outputs=imgres)
                         btn.click(check_calc, inputs=[arval], outputs=exact)      
                         def update_rst0(arstr): 
-                            rst.ar = 1.0
+                            rst.ar = 1.0  # not so good. rework.
                             return rst.apply(_width, _height)
                         def update_rst1(arstr): 
                             rst = "1:1"
@@ -150,7 +150,7 @@ class ARDDScript(scripts.Script):
                         rst.click(update_rst0, inputs=[arval], outputs=imgres)
                         rst.click(update_rst1, inputs=[arval], outputs=[arval])
                         def update_chg(arstr):
-                            chg.ar = 1/ardict[arstr]
+                            chg.ar = 1/ardict[arstr]  # not so good. rework.
                             return chg.apply(_width, _height)
                         chg.click(update_chg, inputs=[arval], outputs=imgres)
                               
