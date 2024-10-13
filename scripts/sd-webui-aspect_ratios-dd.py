@@ -80,8 +80,8 @@ class  AspectRatioButton(ToolButton):
         # Return the list with width and height.
         return retlst
 
-# Define class AspectRatioScript.
-class AspectRatioScript(scripts.Script):
+# Define class AspectRatioDDScript.
+class AspectRatioDDScript(scripts.Script):
     '''Class for selecting the aspect ratio.'''
     
     def title(self):
