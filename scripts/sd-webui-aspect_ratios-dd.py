@@ -54,7 +54,7 @@ for ele in arlist:
     ardict[str(ele)] = fval 
 
 # Define class AspectRatioButton.
-class  AspectRatioButton(ToolButton):
+class  AspectRatioButtonDD(ToolButton):
     '''Class for calculating the new Width and new Height for
        use in the web UI from the chosen aspect ratio.
     '''
@@ -104,10 +104,10 @@ class AspectRatioDDScript(scripts.Script):
     def ui(self, is_img2img):
         '''Class method ui.'''
         # Set the css format strings.
-        css_acc = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio' 
-        css_col = f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
-        css_row = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
-        # Loop over the columns.
+        css_acc = f'{"img" if is_img2img else "txt"}2img_ARDD_accordion_aspect_ratio' 
+        css_col = f'{"img" if is_img2img else "txt"}2img_ARDD_container_aspect_ratio'
+        css_row = f'{"img" if is_img2img else "txt"}2img_ARDD_row_aspect_ratio'
+        # Create a column.
         with gr.Column(elem_id=css_col):
             with InputAccordion(value=False,
                 label="Common Landscape Aspect Ratios", 
@@ -118,9 +118,9 @@ class AspectRatioDDScript(scripts.Script):
                     exact = gr.Textbox(value="EXACT", lines=1, render=True,
                             interactive=True, label="Calculation of Width/Height")
                 with gr.Row(elem_id=css_row):
-                    rst = AspectRatioButton(ar=1.0, value="Reset")
-                    btn = AspectRatioButton(ar=1.0, value="Apply")
-                    chg = AspectRatioButton(ar=1.0, value="Change Orientation")
+                    rst = AspectRatioButtonDD(ar=1.0, value="Reset")
+                    btn = AspectRatioButtonDD(ar=1.0, value="Apply")
+                    chg = AspectRatioButtonDD(ar=1.0, value="Change Orientation")
                     with contextlib.suppress(AttributeError):
                         imgres = self.image_resolution(is_img2img)
                         def update_button(arstr):
