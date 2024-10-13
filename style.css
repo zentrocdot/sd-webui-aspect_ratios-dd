@@ -22,15 +22,8 @@
 #img2img_row_aspect_ratio {
 	margin-right: 6px;
 	margin-left: 6px;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 6px; 
 	gap: 10px;
-}
-
-#txt2img_row_aspect_ratio button,
-#img2img_row_aspect_ratio button {
-	margin: 0px;
-	gap: 20px !important;
-	max-width: unset !important;
 }
