@@ -2,7 +2,7 @@
 '''sd-webui-aspect_ratios-dd
 Extension for AUTOMATIC1111.
 
-Version 0.0.0.2
+Version 0.0.0.3
 
 Description
 The aspect ratios are given in a list. From this list a dictionary 
@@ -46,18 +46,16 @@ arlist = ["1:1", "2:1", "3:1", "3:2", "4:1", "4:3", "5:1", "5:3", "5:4",
           "2.21:1", "2.35:1", "2.37:1", "2.38:1", "2.39:1", "2.40:1", "2.55:1",
           "2.66:1", "2.75:1", "2.76:1", "3.2:1", "3.55:1", "3.58:1", "3.6:1"]
 
-# Create an dictionary.
+# Create a dictionary.
 ardict = dict()
 for ele in arlist:
     templist = ele.split(":")
     fval = float(templist[0]) / float(templist[1])       
     ardict[str(ele)] = fval 
 
-# Define class AspectRatioButton.
-class  AspectRatioButtonDD(ToolButton):
-    '''Class for calculating the new Width and new Height for
-       use in the web UI from the chosen aspect ratio.
-    '''
+# Define class ARDDButton.
+class  ARDDButton(ToolButton):
+    '''New button class.'''
     def __init__(self, ar=1.0, **kwargs):
         '''Class init method.'''
         super().__init__(**kwargs)
@@ -81,8 +79,8 @@ class  AspectRatioButtonDD(ToolButton):
         # Return the list with width and height.
         return retlst
 
-# Define class AspectRatioDDScript.
-class AspectRatioDDScript(scripts.Script):
+# Define class ARDDScript.
+class ARDDScript(scripts.Script):
     '''Class for selecting the aspect ratio.'''
     
     def title(self):
@@ -105,7 +103,7 @@ class AspectRatioDDScript(scripts.Script):
         '''Class method ui.'''
         # Set the css format strings.
         css_acc = f'{"img" if is_img2img else "txt"}2img_ARDD_accordion_aspect_ratio' 
-        css_col = f'{"img" if is_img2img else "txt"}2img_ARDD_container_aspect_ratio'
+        css_col = f'{"img" if is_img2img else "txt"}2img_ARDD_column_aspect_ratio'
         css_row = f'{"img" if is_img2img else "txt"}2img_ARDD_row_aspect_ratio'
         # Create a column.
         with gr.Column(elem_id=css_col):
@@ -118,9 +116,9 @@ class AspectRatioDDScript(scripts.Script):
                     exact = gr.Textbox(value="EXACT", lines=1, render=True,
                             interactive=True, label="Calculation of Width/Height")
                 with gr.Row(elem_id=css_row):
-                    rst = AspectRatioButtonDD(ar=1.0, value="Reset")
-                    btn = AspectRatioButtonDD(ar=1.0, value="Apply")
-                    chg = AspectRatioButtonDD(ar=1.0, value="Change Orientation")
+                    rst = ARDDButton(ar=1.0, value="Reset")
+                    btn = ARDDButton(ar=1.0, value="Apply")
+                    chg = ARDDButton(ar=1.0, value="Change Orientation")
                     with contextlib.suppress(AttributeError):
                         imgres = self.image_resolution(is_img2img)
                         def update_button(arstr):
@@ -129,7 +127,7 @@ class AspectRatioDDScript(scripts.Script):
                         def check_calc(arstr):    
                             retval = "ROUNDED"      
                             ar = ardict[arstr]
-                            x = 512
+                            x = _width
                             y = x * ar
                             print(x, y)      
                             if float(y).is_integer():
