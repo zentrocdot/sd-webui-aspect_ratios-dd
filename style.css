@@ -27,3 +27,13 @@
 	padding: 6px; 
 	gap: 10px;
 }
+
+#txt2img_row_aspect_ratio button,
+#img2img_row_aspect_ratio button{
+	margin-right: 6px;
+	margin-left: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 6px; 
+	gap: 10px;
+}
