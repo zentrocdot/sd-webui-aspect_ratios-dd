@@ -2,7 +2,7 @@
 '''sd-webui-aspect_ratios-dd
 Extension for AUTOMATIC1111.
 
-Version 0.0.0.3
+Version 0.0.0.4
 
 Description
 The aspect ratios are given in a list. From this list a dictionary 
