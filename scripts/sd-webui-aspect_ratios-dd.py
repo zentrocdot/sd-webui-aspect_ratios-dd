@@ -132,8 +132,7 @@ class AspectRatioDDScript(scripts.Script):
                             y = x * ar
                             print(x, y)      
                             if float(y).is_integer():
-                                retval = "EXACT"   
-                                #_exact = "EXACT"      
+                                retval = "EXACT"        
                             return retval          
                         btn.click(update_button, inputs=[arval], outputs=imgres)
                         btn.click(check_calc, inputs=[arval], outputs=exact)      
@@ -148,8 +147,8 @@ class AspectRatioDDScript(scripts.Script):
                         def update_chg(arstr):
                             chg.ar = 1/ardict[arstr]
                             return chg.apply(_width, _height)
-                        chg.click(update_chg, inputs=[arval], outputs=imgres
-                    )
+                        chg.click(update_chg, inputs=[arval], outputs=imgres)
+                              
     # Class method after_component.
     def after_component(self, component, **kwargs):
         '''Class method after_component.
