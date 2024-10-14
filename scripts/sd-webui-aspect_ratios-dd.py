@@ -137,7 +137,7 @@ class ARDDScript(scripts.Script):
                 with gr.Row(elem_id=css_row):      
                     arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
                     exact = gr.Textbox(value="EXACT", lines=1, render=True,
-                            interactive=True, label="Calculation of Width/Height")
+                            interactive=False, label="Calculation of Width/Height")
                 with gr.Row(elem_id=css_row):
                     rst = ARDDButton(value="Reset")
                     btn = ARDDButton(value="Apply")
