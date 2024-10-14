@@ -19,7 +19,7 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 
 ## Explanation
 
-<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. Via a dropdown menu one can select a predefined <i>Aspect Ratio</i>. Using the button Apply, The Width and Height are calculated and taken over in the main UI. A Reset button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>i>. Using the button <key>Apply</key>, the Width and Height are calculated and taken over in the main UI. A Reset button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
 
 # Calculation of Width and Height
 
