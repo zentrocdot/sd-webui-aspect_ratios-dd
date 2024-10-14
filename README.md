@@ -201,7 +201,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 # Development and Test Environment
 
-The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:
+<p align="justify">The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:</p>
 
 * API: v1.10.0
 * Python: 3.10.14
