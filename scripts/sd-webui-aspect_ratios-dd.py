@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 '''sd-webui-aspect_ratios-dd
-Extension for AUTOMATIC1111.
+Extension for the AUTOMATIC1111 web UI.
 
 Version 0.0.0.6
 
 Description
-The aspect ratios are given in a list. From this list a dictionary 
+The aspect ratios are given in a data file. This file will be read
+and the aspect ratios are stored in list. From this list a dictionary 
 is created, in which e.g. the key is "1:1" and the value is 1.0. This
 dictionary is required in my approach to get the value on base of the 
-key.
+key. The quotient like 1.0 is used for the calculation of width and 
+height.
 '''
 # pylint: disable=invalid-name
 # pylint: disable=too-few-public-methods
@@ -31,11 +33,11 @@ import gradio as gr
 import modules.scripts as scripts
 from modules.ui_components import ToolButton, InputAccordion
 
-# Define module variables.
+# Define the private global module variables.
 _width = 512
 _height = 512
 
-# Declare array.
+# Declare the list with the aspect ratios.
 arlist = []
 
 # Define the data paths.
