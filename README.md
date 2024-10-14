@@ -21,12 +21,12 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
    
 <p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i>.</p>
 
-# Goal
+## Goal
 
 <p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information.</p>
 
 
-# What the Extension Does
+## What the Extension Does
 
 After installation, you will find a panel in the AUTOMATIC1111 web UI that looks like the following image when opened.
 
@@ -36,7 +36,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 <p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
 
-# Calculation of Width and Height
+## Calculation of Width and Height
 
 <p align="justify">Depending on the orientation Width or Height is set to 512 pixel.</p>
 
@@ -199,19 +199,19 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 <p align="justify">If the file aspect_ratio.data in the user_data directory exists, this file is used as the source for the drop-down menu data. Otherwise the file aspect_ratio.data in the extension_data directory is used.</p> 
 
-# Support Request 
+## Support Request 
 
 <p align="justify">If there are <i>aspect ratios</i> in the <i>Extension</i> that I do not yet consider, but which were or are common, please let me know about them, that I can take them into account and that I can add them to the predefined list.</p>  
 
-# To-Do
+## To-Do
 
 <p align="justify">Improvement of this documentation.</p>    
 
-# Known Problems
+## Known Problems
 
 <p align="justify">No problems known yet.</p>
 
-# Development and Test Environment
+## Development and Test Environment
 
 <p align="justify">The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:</p>
 
