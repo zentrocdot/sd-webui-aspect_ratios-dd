@@ -178,7 +178,6 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 <p align="justify">It is intended that the user can set aspect ratios of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p> 
 
 ```
-
     ├── stable-diffusion-webui
     └── extensions
         └── sd-webui-aspect_ratios-dd
@@ -189,8 +188,9 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
             │   └── aspect_ratio.data
             └── user_data
                  └── aspect_ratio.data
-
 ```
+
+<p align="justify">Is aspect_ratio.data existing this file is used as source for the data of the dropdown menu.</p> 
 
 # Support Request 
 
