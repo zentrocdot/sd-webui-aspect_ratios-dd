@@ -8,8 +8,7 @@
 
 ## Preface
 
-<p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. 
-I had a steep learning curve while programming using <i>gradio</i>. At the end of the day everything works as expected.</p>
+<p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. I had a steep learning curve while programming using <i>gradio</i>. At the end of the day everything works as expected.</p>
 
 <p align="justify">This will be the last version I have programmed for the time being. It fulfils its purpose and can be adapted to personal requirements. Maintenance and bug fixing are not affected by this statement.</p>
 
@@ -17,9 +16,9 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 
 ## Motivation
 
-<p align="justify">The <i>Aspect Ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
+<p align="justify">The <i>aspect ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the paintings of the middle ages, pictures by photographers and in AI image creation as well.</p>
    
-<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i>.</p>
+<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>aspect ratios</i>. The tools I found did not fulfil my needs. This <i>Extension</i> is the attempt to provide a quick access to suitable <i>aspect ratios</i>.</p>
 
 ## Goal
 
@@ -32,9 +31,11 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 <a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
 
+<p align="justify">To keep the handling of the <i>Extension</i> simple I decided, that I focus on <i>aspect ratios</i> of the orientation landscape. Orientation portrait can be accessed by a change of the orientation.</p>
+
 ## Explanation
 
-<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button <code>Change Orientation</code>. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
 
 ## Calculation of Width and Height
 
@@ -42,12 +43,12 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 <pre>
    Width = 512 pixel
-   Height = Width * Aspect Ratio
+   Height = Width * Aspect Ratio (as quotient) in pixel
 </pre>
 
 <pre>
    Height = 512 pixel
-   Width = Height * Aspect Ratio
+   Width = Height * Aspect Ratio (as quotient) in pixel
 </pre>
 
 <p align="justify">The first value is all the time set to 512. The second and calculated value is an integer or an floating point number. Both values are printed into the terminal window and can be checked there.</p>
@@ -180,7 +181,13 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 * 3.60:1
 * 3.95:1
 
-# User Data
+## Origin of the Aspect Ratios
+
+<p align="justify">Aspect ratios are a recurring theme for a photographer. Whenever I come across an aspect ratio that I don't know yet, I make a note of it.</p> 
+
+<p align="justify">Since it makes no sense to cite the sources, I will refrain from doing so. Most of the listed page ratios can be verified via an internet search.</p> 
+
+## User Data
 
 <p align="justify">It is intended that the user can set aspect ratios of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p> 
 
