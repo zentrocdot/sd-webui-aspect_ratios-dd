@@ -50,13 +50,13 @@ fn_data = Path(BASE_PATH, extension_data_path)
 fn_user = Path(BASE_PATH, user_data_path)
 
 # Function read_data()
-def read_data():
+def read_data(fn):
     '''Read aspect ratio data.'''
     ar_list = []
     # Open file for reading.
-    with open(fn_user) as fn:
+    with open(fn) as f:
         # Read line by line in the file.
-        for line in fn:
+        for line in f:
             data = line.strip()
             if data != "":
                 ar_list.append(data)
@@ -64,10 +64,10 @@ def read_data():
 
 # Check if files exist.
 if Path(fn_user).is_file():
-    arlist = read_data()
+    arlist = read_data(fn_user)
     _label = '<small>User defined aspect ratios used.</small>'
 elif Path(fn_data).is_file():
-    arlist = read_data()
+    arlist = read_data(fn_data)
     _label = '<small>Extension defined aspect ratios used.</small>'
 
 # Create a dictionary.
