@@ -180,18 +180,17 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 ```
 
     ├── stable-diffusion-webui
-    
     └── extensions
-    
         └── sd-webui-aspect_ratios-dd
-        
             ├── json
             ├── images
             ├── scripts
             ├── extension_data
             │   └── aspect_ratio.data
             └── user_data
-                 └── aspect_ratio.data```
+                 └── aspect_ratio.data
+
+```
 
 # Support Request 
 
