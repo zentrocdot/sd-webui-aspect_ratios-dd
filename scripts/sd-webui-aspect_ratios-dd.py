@@ -74,7 +74,7 @@ elif Path(fn_data).is_file():
 
 # Create a dictionary.
 _ardict = dict()
-for ele in arlist:
+for ele in _arlist:
     try:      
         templist = ele.split(":")
         fval = float(templist[0]) / float(templist[1])       
