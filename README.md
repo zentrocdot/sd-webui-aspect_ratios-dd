@@ -175,8 +175,10 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 # User Data
 
-<p align="justify">It is intended that the user can set aspect ratios of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p>  
+<p align="justify">It is intended that the user can set aspect ratios of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p> 
+
 ```
+
     ├── stable-diffusion-webui
     
     └── extensions
