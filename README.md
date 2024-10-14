@@ -19,7 +19,7 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 
 <p align="justify">The <i>Aspect Ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
    
-<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i></p>
+<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i>.</p>
 
 # Goal
 
