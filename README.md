@@ -32,8 +32,6 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 <a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
 
-<p align="justify">The aspect ratios can be selected over the dropdown menu.</p>
-
 ## Explanation
 
 <p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
