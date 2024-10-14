@@ -19,9 +19,22 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
    
 <p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i></p>
 
+# Goal
+
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information.</p>
+
+
+# What the Extension Does
+
+After installation, you will find a panel in the AUTOMATIC1111 web UI that looks like the following image when opened.
+
+<a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
+
+<p align="justify">The aspect ratios can be selected over the dropdown menu.</p>
+
 ## Explanation
 
-<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
 
 # Calculation of Width and Height
 
@@ -38,12 +51,6 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 </pre>
 
 <p align="justify">The first value is all the time set to 512. The second and calculated value is an integer or an floating point number. Both values are printed into the terminal window and can be checked there.</p>
-
-# What the Extension Does
-
-After installation, you will find a panel in the AUTOMATIC1111 web UI that looks like the following image when opened.
-
-<a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
 
 ## Implemented Aspect Ratios
 
@@ -202,7 +209,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 # Known Problems
 
-<p align="justify">No known problems yet.</p>
+<p align="justify">No problems known yet.</p>
 
 # Development and Test Environment
 
