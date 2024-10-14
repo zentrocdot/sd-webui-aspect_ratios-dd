@@ -1,8 +1,8 @@
 
 # Extension for the AUTOMATIC1111 Web UI
-#### sd-webui-aspect_ratios-dd Version 0.0.0.2
+#### sd-webui-aspect_ratios-dd Version 0.0.0.6
 
-<p align="justify">sd-webui-aspect_ratios-dd is an <i>Extension</i> for the <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111/stable-diffusion-webui</a>, which is adding a dropdown menu to the web UI for the selection of predefined <i>aspect ratios</i>.</p>
+<p align="justify">sd-webui-aspect_ratios-dd is an <i>Extension</i> for the <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111/stable-diffusion-webui</a>, which is adding the new functionality to the AUTOMATIC1111 web UI to select predefined or userdefeind aspect ratios.<i>aspect ratios</i>.</p>
 
 ---
 
