@@ -164,8 +164,12 @@ class ARDDScript(scripts.Script):
                         def update_rst1(arstr): 
                             artxt = "1:1"
                             return artxt
+                        def update_rst2(arstr): 
+                            retstr = "EXACT"        
+                            return retstr 
                         rst.click(update_rst0, inputs=[arval], outputs=imgres)
                         rst.click(update_rst1, inputs=[arval], outputs=[arval])
+                        rst.click(update_rst2, inputs=[arval], outputs=exact)
                         def update_chg(arstr):
                             arval = 1/ardict[arstr] 
                             return chg.apply(arval, _width, _height)
