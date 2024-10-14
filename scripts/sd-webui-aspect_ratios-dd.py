@@ -137,7 +137,7 @@ class ARDDScript(scripts.Script):
                 elem_id=css_acc
             ) as enabled:
                 with gr.Row(elem_id=css_row):      
-                    arval = gr.Dropdown(arlist, label="Aspect Ratios", value="1:1")
+                    arval = gr.Dropdown(_arlist, label="Aspect Ratios", value="1:1")
                     exact = gr.Textbox(value="EXACT", lines=1, render=True,
                             interactive=False, label="Calculation of Width/Height")
                 with gr.Row(elem_id=css_row):
