@@ -9,101 +9,17 @@
 ## Preface
 
 <p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. 
-But I had a steep learning curve in <i>gradio</i> programming. But it works as expected at the end of the day.</p>
+I had a steep learning curve while programming using <i>gradio</i>. At the end of the day everything works as expected.</p>
 
 ## Motivation
 
-<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
-
-<p align="justify">This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well. The <i>Extensions</i> I found did not fulfil their purpose. So this is an attempt to provide quick access to suitable <i>Aspect Ratios</i>.</p>
+<p align="justify">The <i>Aspect Ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
+   
+<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>Aspect Ratios</i>. The tools I found did not fulfil my needs. This Extension is the attempt to provide a quick access to suitable <i>Aspect Ratios</i></p>
 
 ## Explanation
 
 <p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. Via a dropdown menu one can select a predefined <i>Aspect Ratio</i>. Using the button Apply, The Width and Height are calculated and taken over in the main UI. A Reset button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
-
-## Implemented Aspect Ratios
-
-<p align="justify">The given <i>Aspect Ratios</i> are basically sorted into two blocks. First come the <i>Aspect Ratios</i> with integer numbers and then the <i>Aspect Ratios</i> with floating point numbers.</p>
-
-* 1:1
-* 1.5:1
-* 2:1
-* 2.4:1
-* 3:1
-* 3:2
-* 3.2:1
-* 3.6:1
-* 4:1
-* 4:3
-* 5:1
-* 5:3
-* 5:4
-* 6:1
-* 6:5
-* 7:1
-* 7:4
-* 7:5
-* 7:5.5
-* 8:5
-* 9:16
-* 10:12
-* 11:5
-* 12:5
-* 13:18
-* 13:19
-* 14:9
-* 15:9
-* 16:9
-* 16:10
-* 17:22
-* 18:5
-* 18:9
-* 18.5:9
-* 19.5:9
-* 20:9
-* 21:9
-* 22:9
-* 32:9
-* 36:10
-* 45:35
-* 55:23
-* 64:27
-* 69:25
-* 239:100
-* 256:135
-* 1.19:1
-* 1.25:1
-* 1.3:1
-* 1.33:1
-* 1.37:1
-* 1.375:1
-* 1.40:1
-* 1.41:1
-* 1.43:1
-* 1.54:1
-* 1.59:1
-* 1.6:1
-* 1.618:1
-* 1.66:1
-* 1.75:1
-* 1.77:1
-* 1.78:1
-* 1.85:1
-* 1.875:1
-* 2.125
-* 2.16:1
-* 2.20:1
-* 2.21:1
-* 2.35:1
-* 2.37:1
-* 2.38:1
-* 2.39:1
-* 2.40:1
-* 2.66:1
-* 2.75:1
-* 2.76:1
-* 3.55:1
-* 3.58:1
 
 # Calculation of Width and Height
 
@@ -123,15 +39,161 @@ But I had a steep learning curve in <i>gradio</i> programming. But it works as e
 
 <p align="justify">Both values are printed into the terminal window and can be checked there.</p>
 
+# What the Extension Does
+
+After installation, you will find a panel in the AUTOMATIC1111 web UI that looks like the following image when opened.
+
+<a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
+
+## Implemented Aspect Ratios
+
+<p align="justify">The given <i>Aspect Ratios</i> are basically sorted into two blocks. First come the <i>Aspect Ratios</i> with integer numbers and then the <i>Aspect Ratios</i> with floating point numbers.</p>
+
+* 1:1
+* 1.5:1
+* 2:1
+* 3:1
+* 3:2
+* 4:1
+* 4:3
+* 5:1
+* 5:3
+* 5:4
+* 6:1
+* 6:5
+* 7:1
+* 7:4
+* 7:5
+* 7:5.5
+* 8:3
+* 8:5
+* 9:7
+* 10:1
+* 10:7
+* 11:5
+* 11.85:3
+* 12:1
+* 12:5
+* 12:9
+* 12:10
+* 13:6
+* 13:18
+* 13:19
+* 14:9
+* 14:11
+* 15:8
+* 15:9
+* 15:10
+* 16:9
+* 16:10
+* 17:9
+* 18:5
+* 18:9
+* 18.5:9
+* 18:10
+* 19:9
+* 19.5:9
+* 20:9
+* 21:9
+* 21.5:9
+* 22:9
+* 22:17
+* 24:9
+* 25:16
+* 28:13
+* 32:9
+* 32:25
+* 35:26
+* 36:10
+* 37:18
+* 37:20
+* 40:21
+* 43:18
+* 45:35
+* 47:20
+* 51:20
+* 55:23
+* 64:27
+* 69:25
+* 70:27
+* 79:20
+* 128:75
+* 192:145
+* 239:100
+* 256:135
+* 300:157
+* 540:283
+* 1.19:1
+* 1.20:1
+* 1.25:1
+* 1.27:1
+* 1.30:1
+* 1.33:1
+* 1.37:1
+* 1.375:1
+* 1.38:1
+* 1.40:1
+* 1.41:1
+* 1.4142:1
+* 1.43:1
+* 1.54:1
+* 1.55:1
+* 1.59:1
+* 1.60:1
+* 1.618:1
+* 1.66:1
+* 1.75:1
+* 1.77:1
+* 1.78:1
+* 1.85:1
+* 1.875:1
+* 1.896:1
+* 1.90:1
+* 1.91:1
+* 2.125:1
+* 2.16:1
+* 2.165:1
+* 2.20:1
+* 2.208:1
+* 2.21:1
+* 2.35:1
+* 2.37:1
+* 2.38:1
+* 2.39:1
+* 2.40:1
+* 2.44:1
+* 2.55:1
+* 2.59:1
+* 2.66:1
+* 2.75:1
+* 2.76:1
+* 3.2:1
+* 3.55:1
+* 3.58:1
+* 3.60:1
+* 3.95:1
+
 # Support Request 
 
-<p align="justify">If there are aspect ratios in the extension that I do not yet know, but which were or are common, please let me know so that I can take them into account.</p>  
+<p align="justify">If there are <i>aspect ratios</i> in the <i>Extension</i> that I do not yet consider, but which were or are common, please let me know about them, that I can take them into account and that I can add them to the predefined list.</p>  
 
 # To-Do
 
-<p align="justify">Improvement of this documentation. Aspect ratios of interest from a text file should be used for the dropdown menu. Maintenance of the aspect ratios of interest is then easier for me. And the user can customise the file to suit their own needs.</p>   
+<p align="justify">Improvement of this documentation.</p>    
 
-<p align="justify">Write a tool that takes into account the fact that the calculation of <code>Width</code> or <code>Height</code> can be a floating point number.</p>   
+# Known Problems
+
+<p align="justify">No known problems yet.</p>
+
+# Development and Test Environment
+
+The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:
+
+* API: v1.10.0
+* Python: 3.10.14
+* torch: 2.1.2+cu121
+* xformers: 0.0.23.post1
+* gradio: 3.41.2
 
 # References
 
