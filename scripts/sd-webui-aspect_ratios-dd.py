@@ -38,7 +38,7 @@ _width = 512
 _height = 512
 
 # Declare the list with the aspect ratios.
-arlist = []
+_arlist = []
 
 # Define the data paths.
 extension_data_path = "extension_data/aspect_ratio.data"
@@ -66,19 +66,19 @@ def read_data(fn):
 
 # Check if files exist.
 if Path(fn_user).is_file():
-    arlist = read_data(fn_user)
+    _arlist = read_data(fn_user)
     _label = '<small>User defined aspect ratios used.</small>'
 elif Path(fn_data).is_file():
-    arlist = read_data(fn_data)
+    _arlist = read_data(fn_data)
     _label = '<small>Extension defined aspect ratios used.</small>'
 
 # Create a dictionary.
-ardict = dict()
+_ardict = dict()
 for ele in arlist:
     try:      
         templist = ele.split(":")
         fval = float(templist[0]) / float(templist[1])       
-        ardict[str(ele)] = fval 
+        _ardict[str(ele)] = fval 
     except:
         print("*** Could not parse: " + str(ele))      
 
@@ -147,11 +147,11 @@ class ARDDScript(scripts.Script):
                     with contextlib.suppress(AttributeError):
                         imgres = self.image_resolution(is_img2img)
                         def update_button(arstr):
-                            arval = ardict[arstr]
+                            arval = _ardict[arstr]
                             return btn.apply(arval, _width, _height)
                         def check_calc(arstr):    
                             retstr = "ROUNDED"      
-                            arval = ardict[arstr]
+                            arval = _ardict[arstr]
                             x = _width
                             y = x * arval
                             print(x, y)      
@@ -173,7 +173,7 @@ class ARDDScript(scripts.Script):
                         rst.click(update_rst1, inputs=[arval], outputs=[arval])
                         rst.click(update_rst2, inputs=[arval], outputs=exact)
                         def update_chg(arstr):
-                            arval = 1/ardict[arstr] 
+                            arval = 1/_ardict[arstr] 
                             return chg.apply(arval, _width, _height)
                         chg.click(update_chg, inputs=[arval], outputs=imgres)
                 with gr.Row(elem_id=css_row):
