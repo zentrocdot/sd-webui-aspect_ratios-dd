@@ -190,7 +190,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
                  └── aspect_ratio.data
 ```
 
-<p align="justify">Is aspect_ratio.data existing this file is used as source for the data of the dropdown menu.</p> 
+<p align="justify">If the file aspect_ratio.data in the user_data directory exists, this file is used as the source for the drop-down menu data. Otherwise the file aspect_ratio.data in the extension_data directory is used.</p> 
 
 # Support Request 
 
