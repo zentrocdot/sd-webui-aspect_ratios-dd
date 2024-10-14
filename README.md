@@ -11,6 +11,8 @@
 <p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. 
 I had a steep learning curve while programming using <i>gradio</i>. At the end of the day everything works as expected.</p>
 
+<p align="justify">This will be the last version I have programmed for the time being. It fulfils its purpose and can be adapted to personal requirements. Maintenance and bug fixing are not affected by this statement.</p>
+
 ## Motivation
 
 <p align="justify">The <i>Aspect Ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
@@ -19,11 +21,11 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 
 ## Explanation
 
-<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <key>A</key> Apply, the Width and Height are calculated and taken over in the main UI. A Reset button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button Change Orientation. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window.</p>
 
 # Calculation of Width and Height
 
-<p align="justify">Depending on the orientation is Width or Height set to 512 pixel.</p>
+<p align="justify">Depending on the orientation Width or Height is set to 512 pixel.</p>
 
 <pre>
    Width = 512 pixel
@@ -35,9 +37,7 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
    Width = Height * Aspect Ratio
 </pre>
 
-<p align="justify">The second and calculated value is an integer or an floating point number.</p>
-
-<p align="justify">Both values are printed into the terminal window and can be checked there.</p>
+<p align="justify">The first value is all the time set to 512. The second and calculated value is an integer or an floating point number. Both values are printed into the terminal window and can be checked there.</p>
 
 # What the Extension Does
 
@@ -172,6 +172,20 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 * 3.58:1
 * 3.60:1
 * 3.95:1
+
+# User Data
+
+<code>
+   ├── stable-diffusion-webui
+    └── extensions
+        └── sd-webui-aspect_ratios-dd
+            ├── extension_data
+            ├── images
+            ├── json
+            ├── scripts
+            │   └── __pycache__
+            └── user_data
+<code>
 
 # Support Request 
 
