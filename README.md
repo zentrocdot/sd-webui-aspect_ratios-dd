@@ -13,6 +13,8 @@ I had a steep learning curve while programming using <i>gradio</i>. At the end o
 
 <p align="justify">This will be the last version I have programmed for the time being. It fulfils its purpose and can be adapted to personal requirements. Maintenance and bug fixing are not affected by this statement.</p>
 
+---
+
 ## Motivation
 
 <p align="justify">The <i>Aspect Ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the painters of the Middle Ages, pictures by photographers and in AI image creation as well.</p>
