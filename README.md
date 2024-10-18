@@ -228,8 +228,14 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 * xformers: 0.0.23.post1
 * gradio: 3.41.2
 
+## Points of Criticism AUTOMATIC1111
+
+<p align="justify">AUTOMATIC1111 uses Gradio to programme the web interface. The Gradio used is extremely buggy and outdated. Currently local version 5.0.1 is installed, AUTOMATIC1111 uses 3.41.2. In forum posts it can be read that the outdated version is given priority over an adaptation. This does not really motivate users to programme extensions.</p>
+
 # References
 
 [1] https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 [2] https://github.com/AUTOMATIC1111/stable-diffusion-webui-extensions
+
+[3] https://www.gradio.app/docs/gradio/interface
