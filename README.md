@@ -1,4 +1,3 @@
-
 # sd-webui-aspect_ratios-dd Version 0.0.0.6 
 #### Extension for the AUTOMATIC1111 Web UI
 
