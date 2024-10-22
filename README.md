@@ -40,7 +40,7 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 ## Calculation of Width and Height
 
-<p align="justify">Depending on the orientation Width or Height is set to 512 pixel.</p>
+<p align="justify">Depending on the orientation Width or Height is set to 512 pixel. The aspect ratio is used as quotient for the calculation. The result is given in unit of measurement as pixel.</p>
 
 + Landscape
 
