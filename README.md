@@ -28,7 +28,7 @@
 
 After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI that looks like the following image when opened.
 
-<a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
+<a target="_blank" href=""><img src="./images/drop_down_panel.png" alt="button panel"></a>
 
 <p align="justify">To keep the handling of the <i>Extension</i> simple I decided, that I focus on <i>aspect ratios</i> of the orientation landscape. Orientation portrait can be accessed by a change of the orientation. In a seperate field it is noted if it was possible to perform the calculation of width and height exact or if one value must be rounded.</p>
 
@@ -38,7 +38,9 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 ## Installation
 
-The installation link, which can be used in AUTOMATIC1111 is as follows:
+<p align="justify">Go to tab <b>Extensions</b>. Then go to tab <b>Install from URL</b>. Put in the ínstallation link in the text field <b>URL for extension's git repository</b>. Finally press button <b>Install</b>. Successful installation is displayed in the footer.</p>
+
+The installation link, which can be used in <i>AUTOMATIC1111</i> is as follows:
 
 ```
 https://github.com/zentrocdot/sd-webui-aspect_ratios-dd
