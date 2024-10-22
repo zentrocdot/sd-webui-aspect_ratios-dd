@@ -230,7 +230,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 
 ## Points of Criticism AUTOMATIC1111
 
-<p align="justify">AUTOMATIC1111 uses Gradio to programme the web interface. The Gradio used is extremely buggy and outdated. Currently local version 5.0.1 is installed, AUTOMATIC1111 uses 3.41.2. In forum posts it can be read that the outdated version is given priority over an adaptation. This does not really motivate users to programme extensions.</p>
+<p align="justify"><i>AUTOMATIC1111</i> uses <i>Gradio</i> to programme the web interface. The <i>Gradio</i> version used is extremely buggy and outdated. Currently local version 5.0.1 is installed, <i>AUTOMATIC1111</i> uses 3.41.2. In <i>AUTOMATIC1111</i> forum posts it can be read that the outdated version is given priority over an adaptation. This does not really motivate users to programme <i>extensions</i>. It can not be that finding workarounds for bugs is the way to spend time in programming.</p>
 
 # References
 
