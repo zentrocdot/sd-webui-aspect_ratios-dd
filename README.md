@@ -245,7 +245,7 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 <hr width="100%" size="2">
 
-<p align="center">There are various ways to support my work. One option is to purchase some of my extraordinary NFTs. Examples can be found here:</p>
+<p align="center">There are various ways to support my work. One option is to purchase some of my extraordinary NFTs. Examples can be found here: :smiley:</p>
 
 * https://opensea.io/collection/fantastic-mushroom-collection
 * https://opensea.io/collection/cats-with-hats-collection-1
