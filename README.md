@@ -42,14 +42,18 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 <p align="justify">Depending on the orientation Width or Height is set to 512 pixel.</p>
 
-<pre>
-   Width = 512 pixel
-   Height = Width * Aspect Ratio (as quotient) in pixel
-</pre>
++ Landscape
 
 <pre>
    Height = 512 pixel
    Width = Height * Aspect Ratio (as quotient) in pixel
+</pre>
+
++ Portrait
+
+<pre>
+   Width = 512 pixel
+   Height = Width * Aspect Ratio (as quotient) in pixel
 </pre>
 
 <p align="justify">The first value is all the time set to 512. The second and calculated value is an integer or an floating point number. Both values are printed into the terminal window and can be checked there.</p>
