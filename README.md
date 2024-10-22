@@ -182,13 +182,13 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 ## Origin of the Aspect Ratios
 
-<p align="justify">Aspect ratios are a recurring theme for a photographer. Whenever I come across an aspect ratio that I don't know yet, I make a note of it.</p> 
+<p align="justify"><i>Aspect ratios</i> are a recurring theme for a photographer. Whenever I come across an <i>aspect ratio</i> that I do not know yet, I make a note of it.</p> 
 
-<p align="justify">Since it makes no sense to cite the sources, I will refrain from doing so. Most of the listed page ratios can be verified via an internet search.</p> 
+<p align="justify">Since it makes no sense to cite all of the sources, I will refrain from doing so. Most of the listed <i>aspect ratios</i> can be verified via a simple internet search.</p> 
 
 ## User Data
 
-<p align="justify">It is intended that the user can set aspect ratios of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p> 
+<p align="justify">It is intended that the user can set <i>aspect ratios</i>i> of his own choice. This can be explained looking at the tree structure of the <i>Extension</i>.</p> 
 
 ```bash
     ├── stable-diffusion-webui
@@ -203,7 +203,7 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
                  └── aspect_ratio.data
 ```
 
-<p align="justify">If the file aspect_ratio.data in the user_data directory exists, this file is used as the source for the drop-down menu data. Otherwise the file aspect_ratio.data in the extension_data directory is used.</p> 
+<p align="justify">If the file <code>aspect_ratio.data</code> in the user_data directory exists, this file is used as the source for the drop-down menu data. Otherwise the file <code>aspect_ratio.data</code> in the extension_data directory is used.</p> 
 
 ## Support Request 
 
