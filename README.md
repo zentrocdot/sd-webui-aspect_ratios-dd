@@ -30,13 +30,18 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 <a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
 
-<p align="justify">To keep the handling of the <i>Extension</i> simple I decided, that I focus on <i>aspect ratios</i> of the orientation landscape. Orientation portrait can be accessed by a change of the orientation.</p>
+<p align="justify">To keep the handling of the <i>Extension</i> simple I decided, that I focus on <i>aspect ratios</i> of the orientation landscape. Orientation portrait can be accessed by a change of the orientation. In a seperate field it is noted if it was possible to perform the calculation of width and height exact or if one value must be rounded.</p>
 
-<p align="justify">In a seperate field it is noted if it was possible to perform the calculation of width and height exact or if one value must be rounded.</p>
 
-## Explanation
+## Detailed Explanation
 
-<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512. The orientation can be switched by the button <code>Change Orientation</code>. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
+<p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information. A drop-down menu allows you to select a predefined <i>aspect ratio</i> from a large number of <i>aspect ratios</i>. Using the button <code>Apply</code>, the Width and Height are calculated from the given <i>aspect ratio</i> and taken over in the main UI. A <code>Reset</code> button is resetting the <i>Aspect Ratio</i> back to 1:1 and Width and Height back to 512 and 512. The orientation can be switched by the button <code>Change Orientation</code>. An additional information is available if the calculation of the new resolution is exact or if one value is a rounded number. The resolution can be checked in the terminal window. Th used aspect ratio data file is noted ist the last line.</p>
+
+## Installation
+
+The installation link, which can be used in AUTOMATIC1111 is as follows:
+
+- https://github.com/zentrocdot/sd-webui-aspect_ratios-dd
 
 ## Calculation of Width and Height
 
