@@ -2,15 +2,15 @@
 #### Version 0.0.0.6 
 #### Extension for the AUTOMATIC1111 Web UI
 
-<p align="justify">sd-webui-aspect_ratios-dd is an <i>Extension</i> for the <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a>, which is adding the new functionality for the selection of predefined or user defined <i>aspect ratios</i> to the AUTOMATIC1111 web UI.</p>
+<p align="justify">sd-webui-aspect_ratios-dd is an <i>Extension</i> for the <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a> web UI, which is adding a new functionality for the selection of predefined or user defined <i>aspect ratios</i> to the <i>AUTOMATIC1111</i> web UI.</p>
 
 ---
 
 ## Preface
 
-<p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. I had a steep learning curve while programming using <i>gradio</i>. At the end of the day everything works as expected.</p>
+<p align="justify">After writing my first <i>Extension</i> the realisation of this <i>Extension</i> was a little bit more complicated. I had a steep learning curve while programming using <i>Gradio</i>. At the end of the day everything works as expected.</p>
 
-<p align="justify">This will be the last version I have programmed for the time being. It fulfils its purpose and can be adapted to personal requirements. Maintenance and bug fixing are not affected by this statement.</p>
+<p align="justify">This will be the last version I have programmed for the time being. It fulfils its purpose and can be adapted to personal requirements. Maintenance and bug fixing are not affected by the last statement.</p>
 
 ---
 
@@ -18,16 +18,15 @@
 
 <p align="justify">The <i>aspect ratio</i> plays a crucial role when dealing with images. This statement is correct in relation to the paintings of the middle ages, pictures by photographers and in AI image creation as well.</p>
    
-<p align="justify">While using AUTOMATIC1111 I missed a tool selecting the common <i>aspect ratios</i>. The tools I found did not fulfil my needs. This <i>Extension</i> is the attempt to provide a quick access to suitable <i>aspect ratios</i>.</p>
+<p align="justify">While using <i>AUTOMATIC1111</i>i> I missed a tool selecting the most common <i>aspect ratios</i>. The tools I found did not fulfil my personal needs. This <i>Extension</i> is the attempt to provide a quick access to a list of suitable <i>aspect ratios</i>.</p>
 
 ## Goal
 
 <p align="justify">The tool should be as simple as possible and at the same time provide all the necessary information.</p>
 
-
 ## What the Extension Does
 
-After installation, you will find a panel in the AUTOMATIC1111 web UI that looks like the following image when opened.
+After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI that looks like the following image when opened.
 
 <a target="_blank" href=""><img src="./images/drop_down_panel_new.png" alt="button panel"></a>
 
@@ -231,6 +230,10 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 ## Points of Criticism AUTOMATIC1111
 
 <p align="justify"><i>AUTOMATIC1111</i> uses <i>Gradio</i> to programme the web interface. The <i>Gradio</i> version used is extremely buggy and outdated. Currently local version 5.0.1 is installed, <i>AUTOMATIC1111</i> uses 3.41.2. In <i>AUTOMATIC1111</i> forum posts it can be read that the outdated version is given priority over an adaptation. This does not really motivate users to programme <i>extensions</i>. It can not be that finding workarounds for bugs is the way to spend time in programming.</p>
+
+## General Remarks
+
+<p align="justify">I am not in any way involved in the development of <i>AUTOMATIC1111</i> itself. For me it is a tool like others no more no less. This <i>Extension</i> is an independend personal project, which is using the given possibilities of <i>AUTOMATIC1111</i>.</p>
 
 # References
 
