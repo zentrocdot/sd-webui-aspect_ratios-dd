@@ -40,9 +40,9 @@ After installation, you will find a panel in the <i>AUTOMATIC1111</i> web UI tha
 
 The installation link, which can be used in AUTOMATIC1111 is as follows:
 
-<pre>
+```
 https://github.com/zentrocdot/sd-webui-aspect_ratios-dd
-</pre>
+```
 
 ## Calculation of Width and Height
 
