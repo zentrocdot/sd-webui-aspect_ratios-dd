@@ -253,7 +253,7 @@ After installation, you will find a panel in the AUTOMATIC1111 web UI that looks
 <p align="center">I loved the time when you could get also a hamburger :hamburger: for one euro!</p>
 
 <p align="center">
-<a target="_blank" href="https://www.buymeacoffee.com/zentrocdot"><img src="\IMAGES\greeen-button.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a target="_blank" href="https://www.buymeacoffee.com/zentrocdot"><img src="\images\greeen-button.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 </p>
 <hr width="100%" size="2">
 
